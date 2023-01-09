@@ -127,6 +127,12 @@ function displayFirstQuestion () {
   question.textContent = questions[currentItem].questionText;
 }
 
+// Reset function
+function resetQuizVariables() {
+  score = 0;
+  currentItem = 0;
+}
+
 // Function that displays the score
 
 // Function that checks answer
