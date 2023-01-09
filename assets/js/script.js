@@ -203,8 +203,3 @@ function resetQuizVariables() {
 }
 
 
-
-
-
-// 
-
