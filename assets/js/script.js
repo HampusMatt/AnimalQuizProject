@@ -112,3 +112,18 @@ trueBtn.addEventListener("click", trueOptionClick);
 falseBtn.addEventListener("click", faleOptionClick);
 
 
+// Function that starts the game
+function startButtonClick () {
+  startBtn.classList.add("hide");
+  trueBtn.classList.remove("hide");
+  falseBtn.classList.remove("hide");
+  displayFirstQuestion();
+}
+
+
+// Function that displays the score
+
+// Function that checks answer
+
+// 
+
