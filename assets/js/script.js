@@ -104,6 +104,7 @@ const questions = [
 const startBtn = document.querySelector(".start-btn");
 const trueBtn = document.querySelector(".true-btn");
 const falseBtn = document.querySelector(".false-btn");
+const playAgain = document.querySelector(".play-again")
 const question = document.querySelector(".question");
 
 let score = 0;
