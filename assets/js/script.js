@@ -120,6 +120,10 @@ function startButtonClick () {
   displayFirstQuestion();
 }
 
+// Function that displays the first question
+function displayFirstQuestion () {
+  question.textContent = questions[currentItem].questionText;
+}
 
 // Function that displays the score
 
