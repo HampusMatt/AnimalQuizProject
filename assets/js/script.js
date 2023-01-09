@@ -149,6 +149,9 @@ function displayFirstQuestion () {
 function displayNextQuestion () {
   currentItem ++;
   question.textContent = questions[currentItem].questionText;
+
+  trueBtn.style.backgroundColor = "lightgrey";
+  falseBtn.style.backgroundColor = "lightgrey";
 }
 
 // Function that checks the answer 
@@ -159,7 +162,7 @@ function checkAnswer (selectedBtn) {
   } else {
     document.activeElement.style.backgroundColor = "red";
   }
-  
+
   if (currentItem === questions.length - 1) {
     gameOver();
   } else {
