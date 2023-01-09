@@ -149,7 +149,11 @@ function checkAnswer (selectedBtn) {
   if (selectedBtn === questions[currentItem].correctAnswer) {
     score ++;
   }
-  displayNextQuestion();
+  if (currentItem === questions.length - 1) {
+    gameOver();
+  } else {
+    displayNextQuestion();
+  }
 }
 
 // Function that displays the score 
