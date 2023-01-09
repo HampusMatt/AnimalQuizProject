@@ -101,17 +101,18 @@ const questions = [
       }
 ]
 
-const startBtn = document.querySelector(".start-button");
+const startBtn = document.querySelector(".start-btn");
 const trueBtn = document.querySelector(".true-btn");
 const falseBtn = document.querySelector(".false-btn");
 const question = document.querySelector(".question");
 
-let score, currentItem;
+let score = 0;
+let currentItem = 0;
 
 // Event listeners for btns
 startBtn.addEventListener("click", startButtonClick);
 trueBtn.addEventListener("click", trueOptionClick);
-falseBtn.addEventListener("click", faleOptionClick);
+falseBtn.addEventListener("click", falseOptionClick);
 
 
 // Function that starts the game
@@ -122,6 +123,9 @@ function startButtonClick () {
   displayFirstQuestion();
 }
 
+// Functions for game btns
+
+
 // Function that displays the first question
 function displayFirstQuestion () {
   question.textContent = questions[currentItem].questionText;
@@ -131,6 +135,14 @@ function displayFirstQuestion () {
 function displayNextQuestion () {
   currentItem ++;
   question.textContent = questions[currentItem].questionText;
+}
+
+// Function that checks the answer 
+function checkAnswer (selectedBtn) {
+  if (selectedBtn === questions[currentItem].correctAnswer) {
+    score ++;
+  }
+  displayNextQuestion();
 }
 
 // Reset function
