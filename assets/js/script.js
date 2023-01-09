@@ -106,6 +106,7 @@ const trueBtn = document.querySelector(".true-btn");
 const falseBtn = document.querySelector(".false-btn");
 const playAgain = document.querySelector(".play-again")
 const question = document.querySelector(".question");
+const img = document.querySelector(".animal-picture");
 
 let score = 0;
 let currentItem = 0;
@@ -143,12 +144,14 @@ function playAgainClick () {
 // Function that displays the first question
 function displayFirstQuestion () {
   question.textContent = questions[currentItem].questionText;
+  img.src = questions[currentItem].imgSrc;
 }
 
 // Function that displays the next question
 function displayNextQuestion () {
   currentItem ++;
   question.textContent = questions[currentItem].questionText;
+  img.src = questions[currentItem].imgSrc;
   resetBtnColors();
 }
 
