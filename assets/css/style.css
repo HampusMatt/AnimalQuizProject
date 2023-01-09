@@ -94,16 +94,29 @@ button:hover {
 @media screen and (max-width: 650px) {
     .animal-picture {
         min-height: auto;
-        min-width: 350px;
+        min-width: 300px;
     }
 
-    .question {
-        min-height: 200px;
+    h1 {
+        font-size: 25px;
     }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 385px) {
     button {
         font-size: 35px;
+    }
+
+    h2 {
+        font-size: 15px;
     }
 }
