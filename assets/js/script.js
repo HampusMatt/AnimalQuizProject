@@ -149,9 +149,7 @@ function displayFirstQuestion () {
 function displayNextQuestion () {
   currentItem ++;
   question.textContent = questions[currentItem].questionText;
-
-  trueBtn.style.backgroundColor = "lightgrey";
-  falseBtn.style.backgroundColor = "lightgrey";
+  resetBtnColors();
 }
 
 // Function that checks the answer 
@@ -193,6 +191,7 @@ function displayScore () {
 function gameOver () {
   displayScore();
   changeQuizUi();
+  resetBtnColors();
 }
 
 // Function that changes the Quiz UI after the quiz
@@ -203,10 +202,15 @@ function changeQuizUi () {
   })
 }
 
-// Reset function
+// Reset functions
 function resetQuizVariables() {
   score = 0;
   currentItem = 0;
+}
+
+function resetBtnColors () {
+  trueBtn.style.backgroundColor = "lightgrey";
+  falseBtn.style.backgroundColor = "lightgrey";
 }
 
 
