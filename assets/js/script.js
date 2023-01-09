@@ -183,7 +183,7 @@ function gameOver () {
 
 // Function that changes the Quiz UI after the quiz
 function changeQuizUi () {
-  const gameSections = document.querySelectorAll(".game-sections");
+  const gameSections = document.querySelectorAll(".game-section");
   gameSections.forEach (function (gameSection) {
     gameSection.classList.toggle("hide");
   })
