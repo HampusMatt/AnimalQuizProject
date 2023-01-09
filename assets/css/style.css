@@ -89,3 +89,15 @@ button:hover {
 .hide {
     display: none;
 }
+
+/* media queries */
+@media screen and (max-width: 650px) {
+    .animal-picture {
+        min-height: auto;
+        min-width: 350px;
+    }
+
+    .question {
+        min-height: 200px;
+    }
+}
