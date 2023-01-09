@@ -100,3 +100,8 @@ const questions = [
         correctAnswer: 'False'
       }
 ]
+
+const startBtn = document.querySelector(".start-button");
+const trueBtn = document.querySelector(".true-btn");
+const falseBtn = document.querySelector(".false-btn");
+const question = document.querySelector(".question");
