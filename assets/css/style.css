@@ -32,6 +32,23 @@ button:hover {
     background-color: aquamarine;
 }
 
+/* title-section styles */
+.title-section {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title {
+    padding: 10px;
+}
+
+/* game-section */
+
+/* score-section */
+
 /* toogle hide */
 .hide {
     display: none;
