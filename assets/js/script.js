@@ -167,6 +167,14 @@ function displayScore () {
   } else {
     addComment = " Oh My! You sure know your animals!";
   }
+  playerscore.innerHTML += addComment;
+}
+
+
+// Game over function 
+function gameOver () {
+  displayScore();
+  changeQuizUi();
 }
 
 // Reset function
