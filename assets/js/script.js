@@ -114,6 +114,7 @@ let currentItem = 0;
 startBtn.addEventListener("click", startButtonClick);
 trueBtn.addEventListener("click", trueOptionClick);
 falseBtn.addEventListener("click", falseOptionClick);
+playAgain.addEventListener("click", playAgainClick);
 
 
 // Function that starts the game
@@ -133,6 +134,11 @@ function falseOptionClick () {
   checkAnswer(falseBtn.textContent);
 }
 
+function playAgainClick () {
+  resetQuizVariables ();
+  changeQuizUi ();
+  displayFirstQuestion ();
+}
 
 // Function that displays the first question
 function displayFirstQuestion () {
