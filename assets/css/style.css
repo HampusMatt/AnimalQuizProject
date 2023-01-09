@@ -46,6 +46,14 @@ button:hover {
 }
 
 /* game-section */
+.game-section {
+    padding: 70px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* score-section */
 
