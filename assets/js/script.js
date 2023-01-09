@@ -124,6 +124,13 @@ function startButtonClick () {
 }
 
 // Functions for game btns
+function trueOptionClick () {
+  checkAnswer(trueBtn.textContent);
+}
+
+function falseOptionClick () {
+  checkAnswer(falseBtn.textContent);
+}
 
 
 // Function that displays the first question
