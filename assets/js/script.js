@@ -155,7 +155,11 @@ function displayNextQuestion () {
 function checkAnswer (selectedBtn) {
   if (selectedBtn === questions[currentItem].correctAnswer) {
     score ++;
+    document.activeElement.style.backgroundColor = "green";
+  } else {
+    document.activeElement.style.backgroundColor = "red";
   }
+  
   if (currentItem === questions.length - 1) {
     gameOver();
   } else {
