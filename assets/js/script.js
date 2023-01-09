@@ -79,4 +79,24 @@ const questions = [
         ],
         correctAnswer: 'False'
       },
+      {
+        id: 9,
+        questionText: 'The male green anaconda is 2x the size of the female counterpart',
+        imgSrc: 'placeholder.png',
+        options: [
+          'True',
+          'False',
+        ],
+        correctAnswer: 'False'
+      },
+      {
+        id: 10,
+        questionText: 'The den of the otter is called a "sofa"',
+        imgSrc: 'placeholder.png',
+        options: [
+          'True',
+          'False',
+        ],
+        correctAnswer: 'False'
+      }
 ]
