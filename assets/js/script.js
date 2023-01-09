@@ -152,6 +152,23 @@ function checkAnswer (selectedBtn) {
   displayNextQuestion();
 }
 
+// Function that displays the score 
+function displayScore () {
+  const playerscore = document.querySelector(".score");
+  playerscore.innerHTML = `You scored ${score} out of 10!`;
+
+  let addComment = "";
+  if (score === 0) {
+    addComment = " That's just bad luck!";
+  } else if (score > 0 && score <= 5) {
+    addComment = " You can do better than that!";
+  } else if (score > 5 && score < 10) {
+    addComment = " Well done!"
+  } else {
+    addComment = " Oh My! You sure know your animals!";
+  }
+}
+
 // Reset function
 function resetQuizVariables() {
   score = 0;
