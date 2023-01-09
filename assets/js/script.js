@@ -106,6 +106,8 @@ const trueBtn = document.querySelector(".true-btn");
 const falseBtn = document.querySelector(".false-btn");
 const question = document.querySelector(".question");
 
+let score, currentItem;
+
 // Event listeners for btns
 startBtn.addEventListener("click", startButtonClick);
 trueBtn.addEventListener("click", trueOptionClick);
