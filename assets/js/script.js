@@ -177,11 +177,21 @@ function gameOver () {
   changeQuizUi();
 }
 
+// Function that changes the Quiz UI after the quiz
+function changeQuizUi () {
+  const gameSections = document.querySelectorAll(".game-sections");
+  gameSections.forEach (function (gameSection) {
+    gameSection.classList.toggle("hide");
+  })
+}
+
 // Reset function
 function resetQuizVariables() {
   score = 0;
   currentItem = 0;
 }
+
+
 
 
 
