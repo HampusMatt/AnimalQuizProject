@@ -162,9 +162,9 @@ function checkAnswer (selectedBtn) {
   }
 
   if (currentItem === questions.length - 1) {
-    gameOver();
+    setTimeout(gameOver, 1000);
   } else {
-    displayNextQuestion();
+    setTimeout(displayNextQuestion, 1000);
   }
 }
 
