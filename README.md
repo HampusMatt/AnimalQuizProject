@@ -57,12 +57,13 @@ the site was deployed and tested for Chrome, Firefox and Edge. The quiz was take
 
 * No erros were found when cheching the HTML with the official [W3C HTML Validator](https://validator.w3.org/)
 * No errors were found when checking the CSS with the official [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
-* No errors were found when checking the JS with the offical insert js-checker!
+* No errors were found when checking the JS with the offical [Jshint validator](https://jshint.com/). However, this code did recieve 13 unclear warnigs for variabels being used. 
+* jShint Metrics: There are 13 functions in this file. Function with the largest signature take 1 arguments, while the median is 0. Largest function has 9 statements in it, while the median is 2. The most complex function has a cyclomatic complexity value of 6 while the median is 1.
 
 * Accessibility
 This site was tested with the Chrome extension Lighthouse with the following score:
 
-
+![screenshot5](assets/images/Lighthouse.png)
 
 ### Fixed bugs
 Bug encountered: When a user first took the quiz, the first option true/false would change color when hovered over. This was not the case for subsequent true/false buttons. This bug would also go away if the user retook the quiz, making it initially hard to spot.
