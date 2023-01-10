@@ -9,17 +9,17 @@ Animal quiz is a website dedicated to provide it’s users with tons of animal t
 ### Heading
 A simple welcoming heading for all to see. It serves the purpose to welcome the user, clearly state the intention of the website, aswell as intice the user to take the quiz by posing a challange.
 
-<!-- placeholder: screenshots heading -->
+![screenshot1](assets/images/screensizes.png)
 
 ### Start game button
 For maximum simplicity, the questions are hidden behind a simple CTA (call to action) in the form of a button, the button changes colors when hovered over.  
 
-<!-- placeholder: sscreenshots of button -->
+![screenshot2](assets/images/Startpicture.png)
 
 ### Footer
 Clear instructions are written in the footer to help new players, aswell as describe a key feature of the site; the changing of the colors of the buttons. 
 
-<!-- placeholder: screenshots of button -->
+![screenshot3](assets/images/footer.png)
 
 ### The Quiz area
 The quiz contains 3 important components: 
@@ -30,12 +30,12 @@ Second: a picture of the animal in question to help with visual clarity aswell a
 
 Third: the buttons. The buttons are simplly true/false. When clicked, the button will turn green if the answer was correct, and it will turn red if the answer was incorrect. It will stay it’s new color for a while in order for the person to notice, after that a new question will appear. This way the user will get feedback throughout the quiz. 
 
-<!-- placeholder: screenshot of the quiz -->
+![screenshot3](assets/images/ExampleQuiz.png)
 
 ### The score area
 After all the questions has been answered, the user will recieve feedback in the manner of a score. Along with the score a message will be displayed, either congratulating the user for it’s achievements or spurring the user to try again.  It does so by placing a new button, with a new question that resets the quiz, making it very easy for the user to go again.  
 
-<!-- placeholder: sreencshot of the score -->
+![screenshot4](assets/images/Scoreimg.png)
 
 ## Features left to implement
 Some features left to implement for future projects: 
@@ -62,7 +62,7 @@ the site was deployed and tested for Chrome, Firefox and Edge. The quiz was take
 * Accessibility
 This site was tested with the Chrome extension Lighthouse with the following score:
 
-<!-- screenshot for ligthouse -->
+
 
 ### Fixed bugs
 Bug encountered: When a user first took the quiz, the first option true/false would change color when hovered over. This was not the case for subsequent true/false buttons. This bug would also go away if the user retook the quiz, making it initially hard to spot.
