@@ -67,7 +67,7 @@ button {
     max-width: 400px;
 }
 
-button.btn-start:hover, button.play-again:hover {
+button.start-btn:hover, button.play-again:hover {
     background-color: aquamarine;
 }
 
