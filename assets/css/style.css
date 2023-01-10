@@ -31,10 +31,6 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
-    background-color: aquamarine;
-}
-
 /* title-section styles */
 .title-section {
     display: flex;
@@ -69,6 +65,10 @@ button:hover {
     height: auto;
     max-height: 400px;
     max-width: 400px;
+}
+
+button.btn-start:hover, button.play-again:hover {
+    background-color: aquamarine;
 }
 
 /* score-section */
