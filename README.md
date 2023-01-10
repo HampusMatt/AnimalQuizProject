@@ -37,6 +37,13 @@ After all the questions has been answered, the user will recieve feedback in the
 
 <!-- placeholder: sreencshot of the score -->
 
+## Features left to implement
+Some features left to implement for future projects: 
+
+* More animal facts. 
+
+* A leaderboard to pit users against each other. 
+
 ## Testing
 
 ### User experience
@@ -66,6 +73,15 @@ Bug encountered: When a user first took the quiz, the first option true/false wo
 
 * Outcome: The bug was fixed and the implementation is working as expected, although initially another bug appeared when the fix was implemented, which led to the start game button not changing color. This was due to a spelling error and later fixed. 
 
+### Unfinnished bugs
+Bug encountered: Sometimes when a new image loads, it pushes all the other content down on the screen. This is not a major bug, but it leads to a worse user experience.
+
+* Cause: The cause of this bug may be due to how the css-selectors load the image and text in relation to the other elements on the screen.
+
+* Fix (fail): Different css-selectors were tested in dev-tools, such as setting fixed hights for container divs.
+
+* Outcome: This led to a significant worse user experience, especially for different screen-sizes.
+
 ## Deployment
 This webpage was deployed to Github pages. The steps to deploy are:
 * Go to the Github repository.
@@ -76,11 +92,15 @@ This webpage was deployed to Github pages. The steps to deploy are:
 
 The live link can be found here: https://hampusmatt.github.io/AnimalQuizProject/
 
-### Credits
+## Credits
 
-## Content
+### Content
+* The Code institute full Gitpod template was used.
+* The font used was taken and implementet from [Google Fonts](https://fonts.google.com/)
+* Information for animal facts was sourced from [Wikipedia](https://www.wikipedia.org/)
 
-## Media
+### Media
+* The pictures were sourced from the free img database [Pexels](https://www.pexels.com/).
 
-## READ ME
+### READ ME
 Mockup was taken from [Techsini](http://techsini.com/multi-mockup/index.php)
