@@ -2,14 +2,14 @@
 
 Animal quiz is a website dedicated to provide it’s users with tons of animal trivia, presented in a fun, challenging way! Here, our users can learn about animals by testing their wits in a fun quiz. We’ve scoured the globe for fun and interesting tidbits about all the animals we share this earth with, and we can guarantee, you will find some interesting tidbit you’ll want to share with your friends! 
 
-<!-- placeholder: screenshots for website on different devices  -->
+![screenshot6](assets/images/screensizes.png)
 
 ## Features
 
 ### Heading
 A simple welcoming heading for all to see. It serves the purpose to welcome the user, clearly state the intention of the website, aswell as intice the user to take the quiz by posing a challange.
 
-![screenshot1](assets/images/screensizes.png)
+![screenshot1](assets/images/Headerimg.png)
 
 ### Start game button
 For maximum simplicity, the questions are hidden behind a simple CTA (call to action) in the form of a button, the button changes colors when hovered over.  
