@@ -99,12 +99,12 @@ const questions = [
         ],
         correctAnswer: 'False'
       }
-]
+];
 
 const startBtn = document.querySelector(".start-btn");
 const trueBtn = document.querySelector(".true-btn");
 const falseBtn = document.querySelector(".false-btn");
-const playAgain = document.querySelector(".play-again")
+const playAgain = document.querySelector(".play-again");
 const question = document.querySelector(".question");
 const img = document.querySelector(".animal-picture");
 
@@ -182,7 +182,7 @@ function displayScore () {
   } else if (score > 0 && score <= 5) {
     addComment = " You can do better than that!";
   } else if (score > 5 && score < 10) {
-    addComment = " Well done!"
+    addComment = " Well done!";
   } else {
     addComment = " Oh My! You sure know your animals!";
   }
@@ -202,7 +202,7 @@ function changeQuizUi () {
   const gameSections = document.querySelectorAll(".game-section");
   gameSections.forEach (function (gameSection) {
     gameSection.classList.toggle("hide");
-  })
+  });
 }
 
 // Reset functions
