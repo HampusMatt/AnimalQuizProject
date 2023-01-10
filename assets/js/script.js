@@ -117,7 +117,6 @@ trueBtn.addEventListener("click", trueOptionClick);
 falseBtn.addEventListener("click", falseOptionClick);
 playAgain.addEventListener("click", playAgainClick);
 
-
 // Function that starts the game
 function startButtonClick () {
   startBtn.classList.add("hide");
@@ -189,7 +188,6 @@ function displayScore () {
   playerscore.innerHTML += addComment;
 }
 
-
 // Game over function 
 function gameOver () {
   displayScore();
@@ -215,5 +213,3 @@ function resetBtnColors () {
   trueBtn.style.backgroundColor = "lightgrey";
   falseBtn.style.backgroundColor = "lightgrey";
 }
-
-
