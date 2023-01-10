@@ -1,108 +1,69 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Animal Quiz
 
-Welcome HampusMatt,
+Animal quiz is a website dedicated to provide it’s users with tons of animal trivia, presented in a fun, challenging way! Here, our users can learn about animals by testing their wits in a fun quiz. We’ve scoured the globe for fun and interesting tidbits about all the animals we share this earth with, and we can guarantee, you will find some interesting tidbit you’ll want to share with your friends! 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<!-- placeholder: screenshots for website on different devices  -->
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+### Heading
+A simple welcoming heading for all to see. It serves the purpose to welcome the user, clearly state the intention of the website, aswell as intice the user to take the quiz by posing a challange.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<!-- placeholder: screenshots heading -->
 
-`python3 -m http.server`
+### Start game button
+For maximum simplicity, the questions are hidden behind a simple CTA (call to action) in the form of a button, the button changes colors when hovered over.  
 
-A blue button should appear to click: _Make Public_,
+<!-- placeholder: sscreenshots of button -->
 
-Another blue button should appear to click: _Open Browser_.
+### Footer
+Clear instructions are written in the footer to help new players, aswell as describe a key feature of the site; the changing of the colors of the buttons. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<!-- placeholder: screenshots of button -->
 
-A blue button should appear to click: _Make Public_,
+### The Quiz area
+The quiz contains 3 important components: 
 
-Another blue button should appear to click: _Open Browser_.
+First: the statement about an animal. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Second: a picture of the animal in question to help with visual clarity aswell as making the quiz more visual appealing. 
 
-To log into the Heroku toolbelt CLI:
+Third: the buttons. The buttons are simplly true/false. When clicked, the button will turn green if the answer was correct, and it will turn red if the answer was incorrect. It will stay it’s new color for a while in order for the person to notice, after that a new question will appear. This way the user will get feedback throughout the quiz. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<!-- placeholder: screenshot of the quiz -->
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### The score area
+After all the questions has been answered, the user will recieve feedback in the manner of a score. Along with the score a message will be displayed, either congratulating the user for it’s achievements or spurring the user to try again.  It does so by placing a new button, with a new question that resets the quiz, making it very easy for the user to go again.  
 
-------
+<!-- placeholder: sreencshot of the score -->
 
-## Release History
+## Testing
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User experience
+the site was deployed and tested for Chrome, Firefox and Edge. The quiz was taken multiple times for each browser with the following results:
+* The score updated as expected for all browser, and the correct message was displayed after the quiz for every score.
+* The images were displayed correctly, although, at times, the text loaded prior to the associated picture. This isn't a bug per se, but can negative impact the user experience somewhat.
+* When the user retook the quiz, the score reset as expected.
+* The webpage was created with responsive design and displayed correctly for different screensizes, with some media queries to increase the user experience for smaller screens.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Validation testing
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* No erros were found when cheching the HTML with the official [W3C HTML Validator](https://validator.w3.org/)
+* No errors were found when checking the CSS with the official [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+* No errors were found when checking the JS with the offical insert js-checker!
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Accessibility
+This site was tested with the Chrome extension Lighthouse with the following score:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<!-- screenshot for ligthouse -->
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Bugs
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Credits
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Content
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Media
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## READ ME
+Mockup was taken from [Techsini](http://techsini.com/multi-mockup/index.php)
