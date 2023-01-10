@@ -57,7 +57,24 @@ This site was tested with the Chrome extension Lighthouse with the following sco
 
 <!-- screenshot for ligthouse -->
 
-### Bugs
+### Fixed bugs
+Bug encountered: When a user first took the quiz, the first option true/false would change color when hovered over. This was not the case for subsequent true/false buttons. This bug would also go away if the user retook the quiz, making it initially hard to spot.
+
+* Cause: The cause of this bug was a hover pseudo-class that would appear on all buttons, and was most likely overwritten when Javascript applied direct styles to the true/false buttons. This would explain why retaking the test did not have this bug.
+
+* Fix: The hover pseudo-class was changed to only be applied to specific buttons.
+
+* Outcome: The bug was fixed and the implementation is working as expected, although initially another bug appeared when the fix was implemented, which led to the start game button not changing color. This was due to a spelling error and later fixed. 
+
+## Deployment
+This webpage was deployed to Github pages. The steps to deploy are:
+* Go to the Github repository.
+* Navigate to the settings tab.
+* Select pages in the menu.
+* From the source section drop-down menu, select the Main branch.
+* Once the main branch has been selected, the page prrovides the link to the completed website.
+
+The live link can be found here: https://hampusmatt.github.io/AnimalQuizProject/
 
 ### Credits
 
